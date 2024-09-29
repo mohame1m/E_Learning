@@ -17,7 +17,7 @@ namespace E_Learning.Areas.Authentication.Controllers
         #region Register
         public async Task<IActionResult> Register()
         {
-            return View("Register");
+            return View("Register" , new RegisterRequest());
         }
 
         public async Task<IActionResult> SaveRegister(RegisterRequest model)
