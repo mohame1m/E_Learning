@@ -10,6 +10,8 @@ namespace E_Learning.Models
         public  string Description { get; set; }
         public string Language { get; set; }
         public int Duration { get; set; }
+        public string Summary { get; set; }
+        public string Status { get; set; }
         public double Price { get; set; }
         public DateTime CreatedDate { get; set; }
         public string CourseLevel { get; set; }
@@ -20,6 +22,7 @@ namespace E_Learning.Models
         public SubCategory  SubCategory  { get; set; }
         public List<CoursePreview>? Previews { get; set; }
         public List<CourseSection> courseSections { get; set; }
+        public List<WishList>? WishLists { get; set; }
 
         [ForeignKey("user")]
         public string InstructorId { get; set; }

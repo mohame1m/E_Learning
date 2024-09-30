@@ -22,7 +22,7 @@ namespace E_Learning
             // Customer Services
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("default"));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("local"));
             });
 
             builder.Services.AddSingleton<IEmailSender>(new EmailService());
